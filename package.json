@@ -1,0 +1,29 @@
+{
+  "name": "2022-10-09_javascript-2_emiliethomsen_ca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehteht487/2022-10-09_JavaScript-2_EmilieThomsen_CA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ehteht487/2022-10-09_JavaScript-2_EmilieThomsen_CA/issues"
+  },
+  "homepage": "https://github.com/ehteht487/2022-10-09_JavaScript-2_EmilieThomsen_CA#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}
