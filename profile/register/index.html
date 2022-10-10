@@ -51,26 +51,18 @@
 
     <input type="email" name="email" required pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Email can only be @stud.noroff.no, and only contain (.), (_) and (-)">
 
-    <input type="password" name="password" required minlength="8 characters">
+    <input type="password" name="password" required minlength="8">
 
     <input type="url" name="banner">
 
     <input type="url" name="avatar">
 
-<!--
-    {
-  "name": "S_BW0hAFNza3RxbYGpECMDYhV4LcskrMgrsv67O26TOsZHo",
-  "email": "user@example.com",
-  "banner": "string",
-  "avatar": "string",
-  "password": "stringst"
-}
--->
-    
+
     <button>Register</button>
   </form>
-
-
+  
+  <script type="module" src="/src/scss/js/handlers/register.mjs"></script>
+  <script type="module" src="/src/scss/js/index.mjs"></script>
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
