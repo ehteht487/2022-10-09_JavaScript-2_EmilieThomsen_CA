@@ -1,10 +1,9 @@
 import { setFormRegisterListener } from "./handlers/register.mjs";
 import { setFormLoginListener } from "./handlers/login.mjs";
 
+
 import * as templates from "./templates/index.mjs";
 import * as postMethods from "./api/posts/index.mjs";
-import { renderPostTemplates } from "./templates/index.mjs";
-
 
 
 
@@ -16,22 +15,24 @@ if (path === "/profile/login/index.html") {
     setFormRegisterListener()
 }
 
+async function testTemplate() {
+    const posts = await postMethods.viewAllPosts();
+    const container = document.querySelector("#post")
+    templates.renderPostTemplates(posts, container)
+}
 
+testTemplate()
+
+
+
+
+//Single post
 // async function testTemplate() {
 //     const posts = await postMethods.viewAllPosts();
+//     const post = posts[25]
 //     const container = document.querySelector("#post")
-//     templates.renderPostTemplates(posts, container)
+//     templates.renderPostTemplate(post, container)
 // }
 
 // testTemplate()
 
-
-// async function testTemplate() {
-//     const posts = await postMethods.viewAllPosts();
-//     //  
-//     const post = posts[45]
-//     const container = document.querySelector("#post")
-//     renderPostTemplate(post, container)
-// }
-
-// testTemplate()
