@@ -17,6 +17,16 @@ export function renderPostTemplate(postData, parent) {
 
 
 export function renderPostTemplates(postDataList, parent) {
-    postDataList.map()
+    const postHTMLElements = postDataList.map(postTemplateB)
+    parent.append(...postHTMLElements)
+
+
+    //const postHTMLElements = postDataList.map(postTemplateB)
+    //parent.append(...postHTMLElements)
+
+    // postDataList.map((postData) => postTemplateB)
+    // postDataList.forEach(post => {
+    //     postTemplateB(post)
+    // });
 }
 

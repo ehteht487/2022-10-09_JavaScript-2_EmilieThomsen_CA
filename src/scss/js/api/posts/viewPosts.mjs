@@ -11,7 +11,7 @@ export async function viewAllPosts() {
     const response = await authFetch(updatePostsURL)
 
     const results = await response.json()
-    
+    console.log(results)
     return results;
 }
 
