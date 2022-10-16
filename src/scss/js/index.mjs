@@ -2,6 +2,7 @@ import * as eventListeners from "./handlers/index.mjs"
 
 import * as templates from "./templates/index.mjs";
 import * as postMethods from "./api/posts/index.mjs";
+import { removeSinglePost } from "./api/posts/index.mjs";
 
 
 
@@ -15,20 +16,18 @@ if (path === "/profile/login/") {
     eventListeners.setCreatePostListener()
 }else if (path === "/postSINGLE/edit/") {
     eventListeners.setUpdatePostListener()
-    eventListeners.setRemoveListener()
+    eventListeners.eliminatePost()
 }
 
 
 
-async function testTemplate() {
-    const posts = await postMethods.viewAllPosts();
-    const container = document.querySelector("#post")
-    templates.renderPostTemplates(posts, container)
-}
+// async function testTemplate() {
+//     const posts = await postMethods.viewAllPosts();
+//     const container = document.querySelector("#post")
+//     templates.renderPostTemplates(posts, container)
+// }
 
-testTemplate()
-
-
+// testTemplate()
 
 
 
