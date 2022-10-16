@@ -21,13 +21,13 @@ if (path === "/profile/login/") {
 
 
 
-// async function testTemplate() {
-//     const posts = await postMethods.viewAllPosts();
-//     const container = document.querySelector("#post")
-//     templates.renderPostTemplates(posts, container)
-// }
+async function testTemplate() {
+    const posts = await postMethods.viewAllPosts();
+    const container = document.querySelector("#post")
+    templates.renderPostTemplates(posts, container)
+}
 
-// testTemplate()
+testTemplate()
 
 
 
