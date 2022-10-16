@@ -1,6 +1,3 @@
-// export function postTemplateA(postData) {
-//     return `<div class="post>${postData.title}</div>`
-// }
 
 export function postTemplateB(postData) {
     const post = document.createElement("div");
